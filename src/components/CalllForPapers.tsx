@@ -1,4 +1,4 @@
-import maskGroup from '../assets/images/maskGroup.png';
+import MaskGroup from '../assets/images/MaskGroup.png';
 
 export default function Publications() {
   return (
@@ -7,7 +7,7 @@ export default function Publications() {
 
         <div className="publication-card">
           <div className="card-image">
-            <img src={maskGroup} alt="Dijital Dönüşüm" />
+            <img src={MaskGroup} alt="Dijital Dönüşüm" />
           </div>
 
           <div className="card-content">
@@ -34,7 +34,7 @@ export default function Publications() {
 
         <div className="publication-card">
           <div className="card-image">
-            <img src={maskGroup} alt="Dijital Dönüşüm" />
+            <img src={MaskGroup} alt="Dijital Dönüşüm" />
           </div>
 
           <div className="card-content">
@@ -64,7 +64,7 @@ export default function Publications() {
 
   <div className="publication-card">
     <div className="card-image">
-      <img src={maskGroup} alt="Dijital Dönüşüm" />
+      <img src={MaskGroup} alt="Dijital Dönüşüm" />
     </div>
 
     <div className="card-content">
