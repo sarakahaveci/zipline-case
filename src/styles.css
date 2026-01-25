@@ -519,6 +519,13 @@
     color: #e53935;
   }
   
+  .about-inner {
+    margin-top: 122px;
+    display: grid;
+    grid-template-columns:none;
+    align-items: center;
+    gap: 60px;
+  }
   /* ARTICLES */
 
   .articles {
@@ -748,7 +755,10 @@ font-weight: bold;
     flex-direction: column;
     gap: 32px;
   }
-
+  .about-magazine {
+    padding: 88px 0 0 10px;
+    background-color: #ffffff;
+}
   .latest-left {
     width: 100%;
     align-items: center;
@@ -765,8 +775,13 @@ font-weight: bold;
   }
 
   /* ---------- ARTICLES ---------- */
+
+  .publications-row {
+    background-color: white;
+    /* display: flex; */
+  }
   .article-list {
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 16px;
   }
@@ -774,13 +789,16 @@ font-weight: bold;
   .article-item {
     flex-direction: column;
     gap: 12px;
+    display: block;
   }
 
   .article-actions {
     justify-content: flex-start;
     gap: 8px;
   }
-
+.issues-card{
+  display: block;
+}
   /* ---------- FOOTER ---------- */
   .footer {
     padding: 48px 0 0;
