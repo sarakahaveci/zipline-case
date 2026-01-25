@@ -7,9 +7,17 @@
   overflow-x: hidden      
   }
   
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
   .container {
     width: 100%;
-    margin: auto;
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
   }
   
   .header {
@@ -645,4 +653,163 @@ font-weight: bold;
       flex-direction: column;
     }
   }
-  
+  /* ===================================
+   FULL MOBILE RESET – PHONES ONLY
+   max-width: 576px
+   =================================== */
+
+@media (max-width: 576px) {
+
+  /* ---------- GLOBAL ---------- */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  h1 { font-size: 24px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 16px; }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ---------- HEADER ---------- */
+  .header {
+    padding: 16px 0;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .header .btn-primary {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    min-height: auto;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mock-cover {
+    width: 220px;
+    height: 300px;
+    transform: rotate(-5deg);
+  }
+
+  /* ---------- LATEST / MAGAZINE ---------- */
+  .latest-inner {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .latest-left {
+    width: 100%;
+    align-items: center;
+  }
+
+  .latest-cover img {
+    width: 220px;
+  }
+
+  .latest-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* ---------- ARTICLES ---------- */
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .article-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .article-actions {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    padding: 48px 0 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-column {
+    align-items: center;
+  }
+
+  .footer-bottom-line {
+    margin-top: 32px;
+    padding: 12px 16px;
+  }
+
+  .bottom-line-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* ---------- IMAGES SAFETY ---------- */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
